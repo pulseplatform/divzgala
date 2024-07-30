@@ -55,20 +55,37 @@ function App() {
 
 function Demo1() {
   return (
-    <Divz autoPlay={true} autoPlayDuration={3000} className="demo1">
-      <div>
-        <h1>1</h1>
-      </div>
-      <div>
-        <h1>2</h1>
-      </div>
-      <div>
-        <h1>3</h1>
-      </div>
-      <div>
-        <h1>4</h1>
-      </div>
-    </Divz>
+    <>
+      <video autoPlay playsInline loop muted className="background">
+        <source
+          src="./demo3/star-stars-night-space-light-121702.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <Divz autoPlay={true} className="demo2" isDarkMode={true}>
+        <div>
+          <img src="./demo3/astronaut-4106766_1280.jpg" />
+        </div>
+
+        <div>
+          <img src="./demo3/astronaut-6052199_1280.jpg" />
+        </div>
+
+        <div>
+          <img src="./demo3/plane-5462276_1280.jpg" />
+        </div>
+
+        <div>
+          <video autoPlay playsInline loop muted>
+            <source
+              src="./demo3/space-ship-magic-purple-sci-fi-53601.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </Divz>
+    </>
   );
 }
 
